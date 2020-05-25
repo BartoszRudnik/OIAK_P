@@ -1,4 +1,5 @@
 #include <algorithm>
+#include "QuickSort.h"
 using namespace std;
 
 int Partition(int tab[], int p, int r){
@@ -8,7 +9,7 @@ int Partition(int tab[], int p, int r){
 
     for(int j = p; j < r; j++){
 
-        if(tab[j] <= x){
+        if(tab[j] < x){
 
             i++;
             swap(tab[i],tab[j]);

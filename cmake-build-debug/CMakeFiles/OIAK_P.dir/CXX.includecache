@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
+/home/bartosz/CLionProjects/OIAK_P/QuickSort.h
+
 /home/bartosz/CLionProjects/OIAK_P/main.cpp
 iostream
 -
+QuickSort.h
+/home/bartosz/CLionProjects/OIAK_P/QuickSort.h
 
