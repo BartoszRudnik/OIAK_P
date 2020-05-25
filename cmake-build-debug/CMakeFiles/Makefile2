@@ -74,12 +74,12 @@ clean: CMakeFiles/OIAK_P.dir/clean
 CMakeFiles/OIAK_P.dir/all:
 	$(MAKE) -f CMakeFiles/OIAK_P.dir/build.make CMakeFiles/OIAK_P.dir/depend
 	$(MAKE) -f CMakeFiles/OIAK_P.dir/build.make CMakeFiles/OIAK_P.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target OIAK_P"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5 "Built target OIAK_P"
 .PHONY : CMakeFiles/OIAK_P.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/OIAK_P.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OIAK_P.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/OIAK_P.dir/rule

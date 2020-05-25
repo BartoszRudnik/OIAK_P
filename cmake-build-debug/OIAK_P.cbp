@@ -84,6 +84,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/bartosz/CLionProjects/OIAK_P/BucketSort.cpp">
+			<Option target="OIAK_P"/>
+		</Unit>
 		<Unit filename="/home/bartosz/CLionProjects/OIAK_P/QuickSort.cpp">
 			<Option target="OIAK_P"/>
 		</Unit>

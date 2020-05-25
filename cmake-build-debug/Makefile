@@ -123,6 +123,33 @@ OIAK_P/fast:
 	$(MAKE) -f CMakeFiles/OIAK_P.dir/build.make CMakeFiles/OIAK_P.dir/build
 .PHONY : OIAK_P/fast
 
+BucketSort.o: BucketSort.cpp.o
+
+.PHONY : BucketSort.o
+
+# target to build an object file
+BucketSort.cpp.o:
+	$(MAKE) -f CMakeFiles/OIAK_P.dir/build.make CMakeFiles/OIAK_P.dir/BucketSort.cpp.o
+.PHONY : BucketSort.cpp.o
+
+BucketSort.i: BucketSort.cpp.i
+
+.PHONY : BucketSort.i
+
+# target to preprocess a source file
+BucketSort.cpp.i:
+	$(MAKE) -f CMakeFiles/OIAK_P.dir/build.make CMakeFiles/OIAK_P.dir/BucketSort.cpp.i
+.PHONY : BucketSort.cpp.i
+
+BucketSort.s: BucketSort.cpp.s
+
+.PHONY : BucketSort.s
+
+# target to generate assembly for a file
+BucketSort.cpp.s:
+	$(MAKE) -f CMakeFiles/OIAK_P.dir/build.make CMakeFiles/OIAK_P.dir/BucketSort.cpp.s
+.PHONY : BucketSort.cpp.s
+
 QuickSort.o: QuickSort.cpp.o
 
 .PHONY : QuickSort.o
@@ -213,6 +240,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... OIAK_P"
+	@echo "... BucketSort.o"
+	@echo "... BucketSort.i"
+	@echo "... BucketSort.s"
 	@echo "... QuickSort.o"
 	@echo "... QuickSort.i"
 	@echo "... QuickSort.s"
