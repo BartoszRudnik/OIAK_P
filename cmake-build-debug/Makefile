@@ -150,6 +150,33 @@ QuickSort.cpp.s:
 	$(MAKE) -f CMakeFiles/OIAK_P.dir/build.make CMakeFiles/OIAK_P.dir/QuickSort.cpp.s
 .PHONY : QuickSort.cpp.s
 
+QuickSortParallel.o: QuickSortParallel.cpp.o
+
+.PHONY : QuickSortParallel.o
+
+# target to build an object file
+QuickSortParallel.cpp.o:
+	$(MAKE) -f CMakeFiles/OIAK_P.dir/build.make CMakeFiles/OIAK_P.dir/QuickSortParallel.cpp.o
+.PHONY : QuickSortParallel.cpp.o
+
+QuickSortParallel.i: QuickSortParallel.cpp.i
+
+.PHONY : QuickSortParallel.i
+
+# target to preprocess a source file
+QuickSortParallel.cpp.i:
+	$(MAKE) -f CMakeFiles/OIAK_P.dir/build.make CMakeFiles/OIAK_P.dir/QuickSortParallel.cpp.i
+.PHONY : QuickSortParallel.cpp.i
+
+QuickSortParallel.s: QuickSortParallel.cpp.s
+
+.PHONY : QuickSortParallel.s
+
+# target to generate assembly for a file
+QuickSortParallel.cpp.s:
+	$(MAKE) -f CMakeFiles/OIAK_P.dir/build.make CMakeFiles/OIAK_P.dir/QuickSortParallel.cpp.s
+.PHONY : QuickSortParallel.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -189,6 +216,9 @@ help:
 	@echo "... QuickSort.o"
 	@echo "... QuickSort.i"
 	@echo "... QuickSort.s"
+	@echo "... QuickSortParallel.o"
+	@echo "... QuickSortParallel.i"
+	@echo "... QuickSortParallel.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

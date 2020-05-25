@@ -1,0 +1,1 @@
+void QuickSortParallel(int tab[], int p, int r);

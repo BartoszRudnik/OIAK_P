@@ -4,6 +4,10 @@
 CMakeFiles/OIAK_P.dir/QuickSort.cpp.o: ../QuickSort.cpp
 CMakeFiles/OIAK_P.dir/QuickSort.cpp.o: ../QuickSort.h
 
+CMakeFiles/OIAK_P.dir/QuickSortParallel.cpp.o: ../QuickSortParallel.cpp
+CMakeFiles/OIAK_P.dir/QuickSortParallel.cpp.o: ../QuickSortParrallel.h
+
 CMakeFiles/OIAK_P.dir/main.cpp.o: ../QuickSort.h
+CMakeFiles/OIAK_P.dir/main.cpp.o: ../QuickSortParrallel.h
 CMakeFiles/OIAK_P.dir/main.cpp.o: ../main.cpp
 

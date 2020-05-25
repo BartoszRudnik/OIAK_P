@@ -90,6 +90,12 @@
 		<Unit filename="/home/bartosz/CLionProjects/OIAK_P/QuickSort.h">
 			<Option target="OIAK_P"/>
 		</Unit>
+		<Unit filename="/home/bartosz/CLionProjects/OIAK_P/QuickSortParallel.cpp">
+			<Option target="OIAK_P"/>
+		</Unit>
+		<Unit filename="/home/bartosz/CLionProjects/OIAK_P/QuickSortParrallel.h">
+			<Option target="OIAK_P"/>
+		</Unit>
 		<Unit filename="/home/bartosz/CLionProjects/OIAK_P/main.cpp">
 			<Option target="OIAK_P"/>
 		</Unit>

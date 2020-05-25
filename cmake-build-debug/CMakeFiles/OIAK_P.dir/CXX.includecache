@@ -8,9 +8,21 @@
 
 /home/bartosz/CLionProjects/OIAK_P/QuickSort.h
 
+/home/bartosz/CLionProjects/OIAK_P/QuickSortParallel.cpp
+QuickSortParrallel.h
+/home/bartosz/CLionProjects/OIAK_P/QuickSortParrallel.h
+algorithm
+-
+thread
+-
+
+/home/bartosz/CLionProjects/OIAK_P/QuickSortParrallel.h
+
 /home/bartosz/CLionProjects/OIAK_P/main.cpp
 iostream
 -
 QuickSort.h
 /home/bartosz/CLionProjects/OIAK_P/QuickSort.h
+QuickSortParrallel.h
+/home/bartosz/CLionProjects/OIAK_P/QuickSortParrallel.h
 
