@@ -6,13 +6,27 @@
 
 #IncludeRegexTransform: 
 
-/home/bartosz/CLionProjects/OIAK_P/QuickSort.h
+/home/kuba/CLionProjects/OIAK_P/BubbleSort.cpp
+algorithm
+-
+BubbleSort.h
+/home/kuba/CLionProjects/OIAK_P/BubbleSort.h
 
-/home/bartosz/CLionProjects/OIAK_P/QuickSortOptimal.h
+/home/kuba/CLionProjects/OIAK_P/BubbleSort.h
 
-/home/bartosz/CLionProjects/OIAK_P/QuickSortParrallel.h
+/home/kuba/CLionProjects/OIAK_P/QuickSort.h
 
-/home/bartosz/CLionProjects/OIAK_P/testy.cpp
+/home/kuba/CLionProjects/OIAK_P/QuickSortOptimal.h
+
+/home/kuba/CLionProjects/OIAK_P/QuickSortParrallel.h
+
+/home/kuba/CLionProjects/OIAK_P/main.cpp
+iostream
+-
+testy.h
+/home/kuba/CLionProjects/OIAK_P/testy.h
+
+/home/kuba/CLionProjects/OIAK_P/testy.cpp
 ctime
 -
 chrono
@@ -21,10 +35,16 @@ iostream
 -
 fstream
 -
+thread
+-
 QuickSort.h
-/home/bartosz/CLionProjects/OIAK_P/QuickSort.h
+/home/kuba/CLionProjects/OIAK_P/QuickSort.h
 QuickSortOptimal.h
-/home/bartosz/CLionProjects/OIAK_P/QuickSortOptimal.h
+/home/kuba/CLionProjects/OIAK_P/QuickSortOptimal.h
 QuickSortParrallel.h
-/home/bartosz/CLionProjects/OIAK_P/QuickSortParrallel.h
+/home/kuba/CLionProjects/OIAK_P/QuickSortParrallel.h
+BubbleSort.h
+/home/kuba/CLionProjects/OIAK_P/BubbleSort.h
+
+/home/kuba/CLionProjects/OIAK_P/testy.h
 

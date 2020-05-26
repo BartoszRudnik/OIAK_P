@@ -48,10 +48,10 @@ RM = /snap/clion/112/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bartosz/CLionProjects/OIAK_P
+CMAKE_SOURCE_DIR = /home/kuba/CLionProjects/OIAK_P
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bartosz/CLionProjects/OIAK_P/cmake-build-debug
+CMAKE_BINARY_DIR = /home/kuba/CLionProjects/OIAK_P/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles /home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kuba/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles /home/kuba/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kuba/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,6 +122,33 @@ OIAK_P: cmake_check_build_system
 OIAK_P/fast:
 	$(MAKE) -f CMakeFiles/OIAK_P.dir/build.make CMakeFiles/OIAK_P.dir/build
 .PHONY : OIAK_P/fast
+
+BubbleSort.o: BubbleSort.cpp.o
+
+.PHONY : BubbleSort.o
+
+# target to build an object file
+BubbleSort.cpp.o:
+	$(MAKE) -f CMakeFiles/OIAK_P.dir/build.make CMakeFiles/OIAK_P.dir/BubbleSort.cpp.o
+.PHONY : BubbleSort.cpp.o
+
+BubbleSort.i: BubbleSort.cpp.i
+
+.PHONY : BubbleSort.i
+
+# target to preprocess a source file
+BubbleSort.cpp.i:
+	$(MAKE) -f CMakeFiles/OIAK_P.dir/build.make CMakeFiles/OIAK_P.dir/BubbleSort.cpp.i
+.PHONY : BubbleSort.cpp.i
+
+BubbleSort.s: BubbleSort.cpp.s
+
+.PHONY : BubbleSort.s
+
+# target to generate assembly for a file
+BubbleSort.cpp.s:
+	$(MAKE) -f CMakeFiles/OIAK_P.dir/build.make CMakeFiles/OIAK_P.dir/BubbleSort.cpp.s
+.PHONY : BubbleSort.cpp.s
 
 BucketSort.o: BucketSort.cpp.o
 
@@ -294,6 +321,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... OIAK_P"
+	@echo "... BubbleSort.o"
+	@echo "... BubbleSort.i"
+	@echo "... BubbleSort.s"
 	@echo "... BucketSort.o"
 	@echo "... BucketSort.i"
 	@echo "... BucketSort.s"
