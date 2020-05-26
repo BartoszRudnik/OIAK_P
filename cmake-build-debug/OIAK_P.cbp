@@ -108,6 +108,12 @@
 		<Unit filename="/home/bartosz/CLionProjects/OIAK_P/main.cpp">
 			<Option target="OIAK_P"/>
 		</Unit>
+		<Unit filename="/home/bartosz/CLionProjects/OIAK_P/testy.cpp">
+			<Option target="OIAK_P"/>
+		</Unit>
+		<Unit filename="/home/bartosz/CLionProjects/OIAK_P/testy.h">
+			<Option target="OIAK_P"/>
+		</Unit>
 		<Unit filename="/home/bartosz/CLionProjects/OIAK_P/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

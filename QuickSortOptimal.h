@@ -1,2 +1,2 @@
-void QuickSortOptimal(int tab[], int p, int r);
+void QuickSortOptimal(int tab[], int p, int r, int maxNum);
 

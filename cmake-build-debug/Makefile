@@ -258,6 +258,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/OIAK_P.dir/build.make CMakeFiles/OIAK_P.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+testy.o: testy.cpp.o
+
+.PHONY : testy.o
+
+# target to build an object file
+testy.cpp.o:
+	$(MAKE) -f CMakeFiles/OIAK_P.dir/build.make CMakeFiles/OIAK_P.dir/testy.cpp.o
+.PHONY : testy.cpp.o
+
+testy.i: testy.cpp.i
+
+.PHONY : testy.i
+
+# target to preprocess a source file
+testy.cpp.i:
+	$(MAKE) -f CMakeFiles/OIAK_P.dir/build.make CMakeFiles/OIAK_P.dir/testy.cpp.i
+.PHONY : testy.cpp.i
+
+testy.s: testy.cpp.s
+
+.PHONY : testy.s
+
+# target to generate assembly for a file
+testy.cpp.s:
+	$(MAKE) -f CMakeFiles/OIAK_P.dir/build.make CMakeFiles/OIAK_P.dir/testy.cpp.s
+.PHONY : testy.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -282,6 +309,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... testy.o"
+	@echo "... testy.i"
+	@echo "... testy.s"
 .PHONY : help
 
 
