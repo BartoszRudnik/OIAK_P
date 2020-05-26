@@ -10,7 +10,7 @@ using namespace std::chrono;
 
 const int tests = 100;
 
-bool mojaNazwa(int *pInt, int n);
+bool isSorted(int *pInt, int n);
 
 void saveFile(string nazwa, double * result){
 
@@ -42,7 +42,7 @@ void testSingleThread(int n){
         QuickSort(tab, 0, n - 1);
         auto finish = high_resolution_clock::now();
 
-        if(mojaNazwa(tab, n))
+        if(isSorted(tab, n))
             cout << "OK" << endl;
         else
             cout << "Zle" << endl;
@@ -80,7 +80,7 @@ void testNoLimit(int n){
         QuickSortParallel(tab, 0, n - 1);
         auto finish = high_resolution_clock::now();
 
-        if(mojaNazwa(tab, n))
+        if(isSorted(tab, n))
             cout << "OK" << endl;
         else
             cout << "Zle" << endl;
@@ -123,7 +123,7 @@ void testLimit(int n){
         QuickSortOptimal(tab, 0, n - 1, tNum);
         auto finish = high_resolution_clock::now();
 
-        if(mojaNazwa(tab, n))
+        if(isSorted(tab, n))
             cout << "OK" << endl;
         else
             cout << "Zle" << endl;
@@ -143,7 +143,7 @@ void testLimit(int n){
 
 }
 
-bool mojaNazwa(int *pInt, int n) {
+bool isSorted(int *pInt, int n) {
 
     for(int i = 1; i < n; i++){
 
