@@ -28,6 +28,8 @@ void testSingleThread(int n){
 
     auto * result = new double[tests];
 
+    int pom = 0;
+
     for(int t = 0; t < tests; t++) {
 
         int *tab = new int[n];
@@ -43,9 +45,7 @@ void testSingleThread(int n){
         auto finish = high_resolution_clock::now();
 
         if(isSorted(tab, n))
-            cout << "OK" << endl;
-        else
-            cout << "Zle" << endl;
+            pom++;
 
         duration<double> time = finish - start;
         time *= 1000000;
@@ -56,6 +56,11 @@ void testSingleThread(int n){
 
     }
 
+    if(pom == tests)
+        cout << "Dane zostaly poprawnie posortowane" << endl;
+    else
+        cout << "W sortowaniu wystapil blad" << endl;
+
     saveFile("SingleThread.txt", result);
 
     delete [] result;
@@ -65,6 +70,8 @@ void testSingleThread(int n){
 void testNoLimit(int n){
 
     auto * result = new double[tests];
+
+    int pom = 0;
 
     for(int t = 0; t < tests; t++) {
 
@@ -81,9 +88,7 @@ void testNoLimit(int n){
         auto finish = high_resolution_clock::now();
 
         if(isSorted(tab, n))
-            cout << "OK" << endl;
-        else
-            cout << "Zle" << endl;
+            pom++;
 
         duration<double> time = finish - start;
         time *= 1000000;
@@ -94,6 +99,11 @@ void testNoLimit(int n){
 
     }
 
+    if(pom == tests)
+        cout << "Dane zostaly poprawnie posortowane" << endl;
+    else
+        cout << "W sortowaniu wystapil blad" << endl;
+
     saveFile("NoLimitThread.txt", result);
 
     delete [] result;
@@ -103,6 +113,7 @@ void testNoLimit(int n){
 void testLimit(int n){
 
     int tNum;
+    int pom = 0;
 
     cout << "Podaj maksymalna liczbe watkow: ";
     cin >> tNum;
@@ -124,9 +135,7 @@ void testLimit(int n){
         auto finish = high_resolution_clock::now();
 
         if(isSorted(tab, n))
-            cout << "OK" << endl;
-        else
-            cout << "Zle" << endl;
+            pom++;
 
         duration<double> time = finish - start;
         time *= 1000000;
@@ -136,6 +145,11 @@ void testLimit(int n){
         delete[] tab;
 
     }
+
+    if(pom == tests)
+        cout << "Dane zostaly poprawnie posortowane" << endl;
+    else
+        cout << "W sortowaniu wystapil blad" << endl;
 
     saveFile("LimitThread.txt", result);
 
