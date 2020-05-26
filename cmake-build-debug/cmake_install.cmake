@@ -1,4 +1,4 @@
-# Install script for directory: /home/kuba/CLionProjects/OIAK_P
+# Install script for directory: /home/bartosz/CLionProjects/OIAK_P
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/kuba/CLionProjects/OIAK_P/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

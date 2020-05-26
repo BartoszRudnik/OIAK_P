@@ -18,6 +18,7 @@ int main() {
         cout << "3. Quick Sort - Wersja wielowatkowa (mozliwosc wyboru maksymalnej liczby watkow)" << endl;
         cout << "4. Bubble Sort - Wersja jednowatkowa" << endl;
         cout << "5. Bubble Sort - Wersja wielowatkowa" << endl;
+        cout << "6. Zmien liczbe danych do posortowania" << endl;
         cout << "0. Wyjscie" << endl;
 
         cin >> nrAlg;
@@ -38,6 +39,12 @@ int main() {
                 break;
             case 4:
                 testBubbleSingleThread(n);
+                break;
+            case 5:
+                break;
+            case 6:
+                cout << "Podaj nowa liczbe danych: ";
+                cin >> n;
                 break;
             default:
                 cout << "Wybrano zly numer" << endl;
