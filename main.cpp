@@ -13,10 +13,11 @@ int main() {
     while(spr){
 
         cout << "Wybierz wersje algorytmu: " << endl;
-        cout << "1. Wersja jednowatkowa" << endl;
-        cout << "2. Wersja wielowatkowa (bez ograniczen liczby watkow)" << endl;
-        cout << "3. Wersja wielowatkowa (mozliwosc wyboru maksymalnej liczby watkow)" << endl;
-        cout << "4. Zmien liczbe danych do posortowania" << endl;
+        cout << "1. Quick Sort - Wersja jednowatkowa" << endl;
+        cout << "2. Quick Sort - Wersja wielowatkowa (bez ograniczen liczby watkow)" << endl;
+        cout << "3. Quick Sort - Wersja wielowatkowa (mozliwosc wyboru maksymalnej liczby watkow)" << endl;
+        cout << "4. Bubble Sort - Wersja jednowatkowa" << endl;
+        cout << "5. Bubble Sort - Wersja wielowatkowa" << endl;
         cout << "0. Wyjscie" << endl;
 
         cin >> nrAlg;
@@ -27,17 +28,16 @@ int main() {
                 spr = false;
                 break;
             case 1:
-                testSingleThread(n);
+                testQuickSingleThread(n);
                 break;
             case 2:
-                testNoLimit(n);
+                testQuickNoLimit(n);
                 break;
             case 3:
-                testLimit(n);
+                testQuickLimit(n);
                 break;
             case 4:
-                cout << "Podaj nowa liczbe danych do posortowania: ";
-                cin >> n;
+                testBubbleSingleThread(n);
                 break;
             default:
                 cout << "Wybrano zly numer" << endl;
