@@ -8,17 +8,16 @@
 using namespace std;
 using namespace std::chrono;
 
-const int tests = 100;
+const int tests = 500;
 
 bool isSorted(int *pInt, int n);
+double average(double *tab);
 
-void saveFile(string nazwa, double * result){
+void saveFile(string nazwa, double result){
 
-    ofstream output(nazwa);
+    ofstream output(nazwa, std::ios::app);
 
-    for(int i = 0; i < tests; i++){
-        output << result[i] << endl;
-    }
+    output << result << endl;
 
     output.close();
 
@@ -48,7 +47,6 @@ void testSingleThread(int n){
             pom++;
 
         duration<double> time = finish - start;
-        time *= 1000000;
 
         result[t] = time.count();
 
@@ -61,7 +59,10 @@ void testSingleThread(int n){
     else
         cout << "W sortowaniu wystapil blad" << endl;
 
-    saveFile("SingleThread.txt", result);
+    double r = average(result);
+    r *= 1000000;
+
+    saveFile("SingleThread.txt", r);
 
     delete [] result;
 
@@ -91,7 +92,6 @@ void testNoLimit(int n){
             pom++;
 
         duration<double> time = finish - start;
-        time *= 1000000;
 
         result[t] = time.count();
 
@@ -104,7 +104,10 @@ void testNoLimit(int n){
     else
         cout << "W sortowaniu wystapil blad" << endl;
 
-    saveFile("NoLimitThread.txt", result);
+    double r = average(result);
+    r *= 1000000;
+
+    saveFile("NoLimit.txt",r);
 
     delete [] result;
 
@@ -138,7 +141,6 @@ void testLimit(int n){
             pom++;
 
         duration<double> time = finish - start;
-        time *= 1000000;
 
         result[t] = time.count();
 
@@ -151,7 +153,10 @@ void testLimit(int n){
     else
         cout << "W sortowaniu wystapil blad" << endl;
 
-    saveFile("LimitThread.txt", result);
+    double r = average(result);
+    r *= 1000000;
+
+    saveFile("LimitThread" + to_string(tNum) + ".txt", r);
 
     delete [] result;
 
@@ -167,6 +172,22 @@ bool isSorted(int *pInt, int n) {
     }
 
     return true;
+
+}
+
+double average(double * tab){
+
+    double result = 0;
+
+    for(int i = 0; i < tests; i++){
+
+        result += tab[i];
+
+    }
+
+    result /= tests;
+
+    return result;
 
 }
 
