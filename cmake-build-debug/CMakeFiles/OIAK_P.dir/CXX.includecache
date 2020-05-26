@@ -8,21 +8,29 @@
 
 /home/bartosz/CLionProjects/OIAK_P/QuickSort.h
 
-/home/bartosz/CLionProjects/OIAK_P/QuickSortParallel.cpp
-QuickSortParrallel.h
-/home/bartosz/CLionProjects/OIAK_P/QuickSortParrallel.h
+/home/bartosz/CLionProjects/OIAK_P/QuickSortOptimal.cpp
 algorithm
 -
 thread
 -
+iostream
+-
+
+/home/bartosz/CLionProjects/OIAK_P/QuickSortOptimal.h
 
 /home/bartosz/CLionProjects/OIAK_P/QuickSortParrallel.h
 
 /home/bartosz/CLionProjects/OIAK_P/main.cpp
 iostream
 -
+chrono
+-
+time.h
+-
 QuickSort.h
 /home/bartosz/CLionProjects/OIAK_P/QuickSort.h
 QuickSortParrallel.h
 /home/bartosz/CLionProjects/OIAK_P/QuickSortParrallel.h
+QuickSortOptimal.h
+/home/bartosz/CLionProjects/OIAK_P/QuickSortOptimal.h
 

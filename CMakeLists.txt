@@ -3,7 +3,7 @@ project(OIAK_P)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(OIAK_P main.cpp QuickSort.cpp QuickSort.h QuickSortParallel.cpp QuickSortParrallel.h BucketSort.cpp)
+add_executable(OIAK_P main.cpp QuickSort.cpp QuickSort.h QuickSortParallel.cpp QuickSortParrallel.h BucketSort.cpp QuickSortOptimal.cpp QuickSortOptimal.h)
 
 find_package(Threads REQUIRED)
 

@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/bartosz/CLionProjects/OIAK_P/BucketSort.cpp" "/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles/OIAK_P.dir/BucketSort.cpp.o"
   "/home/bartosz/CLionProjects/OIAK_P/QuickSort.cpp" "/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles/OIAK_P.dir/QuickSort.cpp.o"
+  "/home/bartosz/CLionProjects/OIAK_P/QuickSortOptimal.cpp" "/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles/OIAK_P.dir/QuickSortOptimal.cpp.o"
   "/home/bartosz/CLionProjects/OIAK_P/QuickSortParallel.cpp" "/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles/OIAK_P.dir/QuickSortParallel.cpp.o"
   "/home/bartosz/CLionProjects/OIAK_P/main.cpp" "/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles/OIAK_P.dir/main.cpp.o"
   )
