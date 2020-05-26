@@ -8,7 +8,7 @@
 using namespace std;
 using namespace std::chrono;
 
-const int tests = 500;
+const int tests = 250;
 
 bool isSorted(int *pInt, int n);
 double average(double *tab);
@@ -43,6 +43,8 @@ void testSingleThread(int n){
         QuickSort(tab, 0, n - 1);
         auto finish = high_resolution_clock::now();
 
+        setActual();
+
         if(isSorted(tab, n))
             pom++;
 
@@ -55,9 +57,9 @@ void testSingleThread(int n){
     }
 
     if(pom == tests)
-        cout << "Dane zostaly poprawnie posortowane" << endl;
+        cout << "Dane zostaly poprawnie posortowane" << endl << endl;
     else
-        cout << "W sortowaniu wystapil blad" << endl;
+        cout << "W sortowaniu wystapilo: " << tests - pom << " bledow" << endl << endl;
 
     double r = average(result);
     r *= 1000000;
@@ -88,6 +90,8 @@ void testNoLimit(int n){
         QuickSortParallel(tab, 0, n - 1);
         auto finish = high_resolution_clock::now();
 
+        setActual();
+
         if(isSorted(tab, n))
             pom++;
 
@@ -100,9 +104,9 @@ void testNoLimit(int n){
     }
 
     if(pom == tests)
-        cout << "Dane zostaly poprawnie posortowane" << endl;
+        cout << "Dane zostaly poprawnie posortowane" << endl << endl;
     else
-        cout << "W sortowaniu wystapil blad" << endl;
+        cout << "W sortowaniu wystapilo: " << tests - pom << " bledow" << endl << endl;
 
     double r = average(result);
     r *= 1000000;
@@ -137,6 +141,8 @@ void testLimit(int n){
         QuickSortOptimal(tab, 0, n - 1, tNum);
         auto finish = high_resolution_clock::now();
 
+        setActual();
+
         if(isSorted(tab, n))
             pom++;
 
@@ -149,9 +155,9 @@ void testLimit(int n){
     }
 
     if(pom == tests)
-        cout << "Dane zostaly poprawnie posortowane" << endl;
+        cout << "Dane zostaly poprawnie posortowane" << endl << endl;
     else
-        cout << "W sortowaniu wystapil blad" << endl;
+        cout << "W sortowaniu wystapilo: " << tests - pom << " bledow" << endl << endl;
 
     double r = average(result);
     r *= 1000000;

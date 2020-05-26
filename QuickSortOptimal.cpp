@@ -5,6 +5,10 @@ using namespace std;
 
 int actual = 1;
 
+void setActual(){
+    actual = 1;
+}
+
 void QuickSortOptimal(int tab[], int p, int r, int maxNum){
 
     if(p < r){

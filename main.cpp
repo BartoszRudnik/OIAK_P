@@ -16,6 +16,7 @@ int main() {
         cout << "1. Wersja jednowatkowa" << endl;
         cout << "2. Wersja wielowatkowa (bez ograniczen liczby watkow)" << endl;
         cout << "3. Wersja wielowatkowa (mozliwosc wyboru maksymalnej liczby watkow)" << endl;
+        cout << "4. Zmien liczbe danych do posortowania" << endl;
         cout << "0. Wyjscie" << endl;
 
         cin >> nrAlg;
@@ -33,6 +34,10 @@ int main() {
                 break;
             case 3:
                 testLimit(n);
+                break;
+            case 4:
+                cout << "Podaj nowa liczbe danych do posortowania: ";
+                cin >> n;
                 break;
             default:
                 cout << "Wybrano zly numer" << endl;
