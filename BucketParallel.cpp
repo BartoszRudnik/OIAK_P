@@ -31,7 +31,7 @@ int* BucketParallel(int* data,int n, int threadNum){
             bucket[5].push_back(data[i]);
         else if(data[i] >= 3000 && data[i] < 3500)
             bucket[6].push_back(data[i]);
-        else if(data[i] >= 3500 && data[i] < 4000)
+        else if(data[i] >= 3500 && data[i] <= 4000)
             bucket[7].push_back(data[i]);
 
     }

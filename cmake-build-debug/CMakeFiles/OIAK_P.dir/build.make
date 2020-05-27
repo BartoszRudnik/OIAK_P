@@ -70,9 +70,22 @@ CMakeFiles/OIAK_P.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OIAK_P.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bartosz/CLionProjects/OIAK_P/main.cpp -o CMakeFiles/OIAK_P.dir/main.cpp.s
 
+CMakeFiles/OIAK_P.dir/BucketParallel.cpp.o: CMakeFiles/OIAK_P.dir/flags.make
+CMakeFiles/OIAK_P.dir/BucketParallel.cpp.o: ../BucketParallel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OIAK_P.dir/BucketParallel.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OIAK_P.dir/BucketParallel.cpp.o -c /home/bartosz/CLionProjects/OIAK_P/BucketParallel.cpp
+
+CMakeFiles/OIAK_P.dir/BucketParallel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OIAK_P.dir/BucketParallel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bartosz/CLionProjects/OIAK_P/BucketParallel.cpp > CMakeFiles/OIAK_P.dir/BucketParallel.cpp.i
+
+CMakeFiles/OIAK_P.dir/BucketParallel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OIAK_P.dir/BucketParallel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bartosz/CLionProjects/OIAK_P/BucketParallel.cpp -o CMakeFiles/OIAK_P.dir/BucketParallel.cpp.s
+
 CMakeFiles/OIAK_P.dir/QuickSort.cpp.o: CMakeFiles/OIAK_P.dir/flags.make
 CMakeFiles/OIAK_P.dir/QuickSort.cpp.o: ../QuickSort.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OIAK_P.dir/QuickSort.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OIAK_P.dir/QuickSort.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OIAK_P.dir/QuickSort.cpp.o -c /home/bartosz/CLionProjects/OIAK_P/QuickSort.cpp
 
 CMakeFiles/OIAK_P.dir/QuickSort.cpp.i: cmake_force
@@ -85,7 +98,7 @@ CMakeFiles/OIAK_P.dir/QuickSort.cpp.s: cmake_force
 
 CMakeFiles/OIAK_P.dir/QuickSortParallel.cpp.o: CMakeFiles/OIAK_P.dir/flags.make
 CMakeFiles/OIAK_P.dir/QuickSortParallel.cpp.o: ../QuickSortParallel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OIAK_P.dir/QuickSortParallel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OIAK_P.dir/QuickSortParallel.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OIAK_P.dir/QuickSortParallel.cpp.o -c /home/bartosz/CLionProjects/OIAK_P/QuickSortParallel.cpp
 
 CMakeFiles/OIAK_P.dir/QuickSortParallel.cpp.i: cmake_force
@@ -98,7 +111,7 @@ CMakeFiles/OIAK_P.dir/QuickSortParallel.cpp.s: cmake_force
 
 CMakeFiles/OIAK_P.dir/BucketSort.cpp.o: CMakeFiles/OIAK_P.dir/flags.make
 CMakeFiles/OIAK_P.dir/BucketSort.cpp.o: ../BucketSort.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OIAK_P.dir/BucketSort.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/OIAK_P.dir/BucketSort.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OIAK_P.dir/BucketSort.cpp.o -c /home/bartosz/CLionProjects/OIAK_P/BucketSort.cpp
 
 CMakeFiles/OIAK_P.dir/BucketSort.cpp.i: cmake_force
@@ -111,7 +124,7 @@ CMakeFiles/OIAK_P.dir/BucketSort.cpp.s: cmake_force
 
 CMakeFiles/OIAK_P.dir/QuickSortOptimal.cpp.o: CMakeFiles/OIAK_P.dir/flags.make
 CMakeFiles/OIAK_P.dir/QuickSortOptimal.cpp.o: ../QuickSortOptimal.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/OIAK_P.dir/QuickSortOptimal.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/OIAK_P.dir/QuickSortOptimal.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OIAK_P.dir/QuickSortOptimal.cpp.o -c /home/bartosz/CLionProjects/OIAK_P/QuickSortOptimal.cpp
 
 CMakeFiles/OIAK_P.dir/QuickSortOptimal.cpp.i: cmake_force
@@ -124,7 +137,7 @@ CMakeFiles/OIAK_P.dir/QuickSortOptimal.cpp.s: cmake_force
 
 CMakeFiles/OIAK_P.dir/testy.cpp.o: CMakeFiles/OIAK_P.dir/flags.make
 CMakeFiles/OIAK_P.dir/testy.cpp.o: ../testy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/OIAK_P.dir/testy.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/OIAK_P.dir/testy.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OIAK_P.dir/testy.cpp.o -c /home/bartosz/CLionProjects/OIAK_P/testy.cpp
 
 CMakeFiles/OIAK_P.dir/testy.cpp.i: cmake_force
@@ -137,7 +150,7 @@ CMakeFiles/OIAK_P.dir/testy.cpp.s: cmake_force
 
 CMakeFiles/OIAK_P.dir/BubbleSort.cpp.o: CMakeFiles/OIAK_P.dir/flags.make
 CMakeFiles/OIAK_P.dir/BubbleSort.cpp.o: ../BubbleSort.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/OIAK_P.dir/BubbleSort.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/OIAK_P.dir/BubbleSort.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OIAK_P.dir/BubbleSort.cpp.o -c /home/bartosz/CLionProjects/OIAK_P/BubbleSort.cpp
 
 CMakeFiles/OIAK_P.dir/BubbleSort.cpp.i: cmake_force
@@ -150,7 +163,7 @@ CMakeFiles/OIAK_P.dir/BubbleSort.cpp.s: cmake_force
 
 CMakeFiles/OIAK_P.dir/BubbleSortParallel.cpp.o: CMakeFiles/OIAK_P.dir/flags.make
 CMakeFiles/OIAK_P.dir/BubbleSortParallel.cpp.o: ../BubbleSortParallel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/OIAK_P.dir/BubbleSortParallel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/OIAK_P.dir/BubbleSortParallel.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OIAK_P.dir/BubbleSortParallel.cpp.o -c /home/bartosz/CLionProjects/OIAK_P/BubbleSortParallel.cpp
 
 CMakeFiles/OIAK_P.dir/BubbleSortParallel.cpp.i: cmake_force
@@ -164,6 +177,7 @@ CMakeFiles/OIAK_P.dir/BubbleSortParallel.cpp.s: cmake_force
 # Object files for target OIAK_P
 OIAK_P_OBJECTS = \
 "CMakeFiles/OIAK_P.dir/main.cpp.o" \
+"CMakeFiles/OIAK_P.dir/BucketParallel.cpp.o" \
 "CMakeFiles/OIAK_P.dir/QuickSort.cpp.o" \
 "CMakeFiles/OIAK_P.dir/QuickSortParallel.cpp.o" \
 "CMakeFiles/OIAK_P.dir/BucketSort.cpp.o" \
@@ -176,6 +190,7 @@ OIAK_P_OBJECTS = \
 OIAK_P_EXTERNAL_OBJECTS =
 
 OIAK_P: CMakeFiles/OIAK_P.dir/main.cpp.o
+OIAK_P: CMakeFiles/OIAK_P.dir/BucketParallel.cpp.o
 OIAK_P: CMakeFiles/OIAK_P.dir/QuickSort.cpp.o
 OIAK_P: CMakeFiles/OIAK_P.dir/QuickSortParallel.cpp.o
 OIAK_P: CMakeFiles/OIAK_P.dir/BucketSort.cpp.o
@@ -185,7 +200,7 @@ OIAK_P: CMakeFiles/OIAK_P.dir/BubbleSort.cpp.o
 OIAK_P: CMakeFiles/OIAK_P.dir/BubbleSortParallel.cpp.o
 OIAK_P: CMakeFiles/OIAK_P.dir/build.make
 OIAK_P: CMakeFiles/OIAK_P.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable OIAK_P"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable OIAK_P"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OIAK_P.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -41,7 +41,7 @@ void testBucketParallel(int n){
         srand(time(NULL));
 
         for (int i = 0; i < n; i++) {
-            tab[i] = rand() % n + 1;
+            tab[i] = rand() % 4000 + 1;
         }
 
         auto start = high_resolution_clock::now();
