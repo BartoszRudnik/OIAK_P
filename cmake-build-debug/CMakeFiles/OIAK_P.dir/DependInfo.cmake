@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/bartosz/CLionProjects/OIAK_P/BubbleSort.cpp" "/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles/OIAK_P.dir/BubbleSort.cpp.o"
+  "/home/bartosz/CLionProjects/OIAK_P/BucketParallel.cpp" "/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles/OIAK_P.dir/BucketParallel.cpp.o"
   "/home/bartosz/CLionProjects/OIAK_P/BucketSort.cpp" "/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles/OIAK_P.dir/BucketSort.cpp.o"
   "/home/bartosz/CLionProjects/OIAK_P/QuickSort.cpp" "/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles/OIAK_P.dir/QuickSort.cpp.o"
   "/home/bartosz/CLionProjects/OIAK_P/QuickSortOptimal.cpp" "/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles/OIAK_P.dir/QuickSortOptimal.cpp.o"

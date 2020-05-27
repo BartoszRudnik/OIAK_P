@@ -150,6 +150,33 @@ BubbleSort.cpp.s:
 	$(MAKE) -f CMakeFiles/OIAK_P.dir/build.make CMakeFiles/OIAK_P.dir/BubbleSort.cpp.s
 .PHONY : BubbleSort.cpp.s
 
+BucketParallel.o: BucketParallel.cpp.o
+
+.PHONY : BucketParallel.o
+
+# target to build an object file
+BucketParallel.cpp.o:
+	$(MAKE) -f CMakeFiles/OIAK_P.dir/build.make CMakeFiles/OIAK_P.dir/BucketParallel.cpp.o
+.PHONY : BucketParallel.cpp.o
+
+BucketParallel.i: BucketParallel.cpp.i
+
+.PHONY : BucketParallel.i
+
+# target to preprocess a source file
+BucketParallel.cpp.i:
+	$(MAKE) -f CMakeFiles/OIAK_P.dir/build.make CMakeFiles/OIAK_P.dir/BucketParallel.cpp.i
+.PHONY : BucketParallel.cpp.i
+
+BucketParallel.s: BucketParallel.cpp.s
+
+.PHONY : BucketParallel.s
+
+# target to generate assembly for a file
+BucketParallel.cpp.s:
+	$(MAKE) -f CMakeFiles/OIAK_P.dir/build.make CMakeFiles/OIAK_P.dir/BucketParallel.cpp.s
+.PHONY : BucketParallel.cpp.s
+
 BucketSort.o: BucketSort.cpp.o
 
 .PHONY : BucketSort.o
@@ -324,6 +351,9 @@ help:
 	@echo "... BubbleSort.o"
 	@echo "... BubbleSort.i"
 	@echo "... BubbleSort.s"
+	@echo "... BucketParallel.o"
+	@echo "... BucketParallel.i"
+	@echo "... BucketParallel.s"
 	@echo "... BucketSort.o"
 	@echo "... BucketSort.i"
 	@echo "... BucketSort.s"

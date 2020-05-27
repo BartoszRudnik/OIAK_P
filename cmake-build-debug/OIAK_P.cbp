@@ -90,6 +90,12 @@
 		<Unit filename="/home/bartosz/CLionProjects/OIAK_P/BubbleSort.h">
 			<Option target="OIAK_P"/>
 		</Unit>
+		<Unit filename="/home/bartosz/CLionProjects/OIAK_P/BucketParallel.cpp">
+			<Option target="OIAK_P"/>
+		</Unit>
+		<Unit filename="/home/bartosz/CLionProjects/OIAK_P/BucketParallel.h">
+			<Option target="OIAK_P"/>
+		</Unit>
 		<Unit filename="/home/bartosz/CLionProjects/OIAK_P/BucketSort.cpp">
 			<Option target="OIAK_P"/>
 		</Unit>

@@ -20,6 +20,7 @@ int main() {
         cout << "5. Bubble Sort - Wersja wielowatkowa" << endl;
         cout << "6. Zmien liczbe danych do posortowania" << endl;
         cout << "7. Sprawdz liczbe danych dla ktorych wykonywane jest sortowanie" << endl;
+        cout << "8. Bucket Sort - Wersja z max 8 watkami" << endl;
         cout << "0. Wyjscie" << endl;
 
         cin >> nrAlg;
@@ -50,6 +51,9 @@ int main() {
             case 7:
                 cout << "Aktualna liczba danych to: " << n << endl;
                 break;
+            case 8:
+                testBucketParallel(n);
+                break;
             default:
                 cout << "Wybrano zly numer" << endl;
                 break;
@@ -57,6 +61,8 @@ int main() {
         }
 
     }
+
+
 
     return 0;
 

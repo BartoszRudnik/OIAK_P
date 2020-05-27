@@ -1,0 +1,1 @@
+int * BucketParallel(int* data, int n, int threadNum);
