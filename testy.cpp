@@ -9,6 +9,7 @@
 #include "BubbleSort.h"
 #include "BucketParallel.h"
 #include "BubbleSortParallel.h"
+#include "BucketSort.h"
 
 using namespace std;
 using namespace std::chrono;
@@ -25,6 +26,51 @@ void saveFile(string nazwa, double result){
     output << result << endl;
 
     output.close();
+
+}
+
+void testBucketSingle(int n){
+
+    auto * result = new double[tests];
+
+    int pom = 0;
+
+    for(int t = 0; t < tests; t++) {
+
+        int *tab = new int[n];
+
+        srand(time(NULL));
+
+        for (int i = 0; i < n; i++) {
+            tab[i] = rand() % 4000 + 1;
+        }
+
+        auto start = high_resolution_clock::now();
+        tab = BucketSingleThread(tab, n);
+        auto finish = high_resolution_clock::now();
+
+        if(isSorted(tab, n))
+            pom++;
+
+        duration<double> time = finish - start;
+
+        result[t] = time.count();
+
+        delete[] tab;
+
+    }
+
+    if(pom == tests)
+        cout << "Dane zostaly poprawnie posortowane" << endl << endl;
+    else
+        cout << "W sortowaniu wystapilo: " << tests - pom << " bledow" << endl << endl;
+
+    double r = average(result);
+    r *= 1000000;
+
+    saveFile("TESTBucketSingleThread.txt", r);
+
+    delete [] result;
 
 }
 
@@ -47,8 +93,6 @@ void testBucketParallel(int n) {
             tNumOk = true;
         }
     }
-
-
 
     for(int t = 0; t < tests; t++) {
 
@@ -88,8 +132,6 @@ void testBucketParallel(int n) {
     delete [] result;
 
 }
-
-
 
 void testQuickSingleThread(int n){
 

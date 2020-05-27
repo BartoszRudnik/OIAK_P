@@ -15,17 +15,8 @@ int* BucketParallel(int* data,int n, int threadNum) {
     auto *bucket = new vector<int>[threadNum];
     auto *threads = new vector<thread>[threadNum];
 
-    //int bucketSize = 4000/threadNum;
     if (threadNum == 8) {
         for (int i = 0; i < n; i++) {
-// BARDZO CZASOCHŁONNE!
-//        for(int j = 0; j < threadNum; j++){
-//            if(data[i] > j*bucketSize && data[i] <= (j*bucketSize)+bucketSize){
-//                bucket[j].push_back(data[i]);
-//                //cout << j << endl;
-//            }
-//        }
-
             if (data[i] < 500)
                 bucket[0].push_back(data[i]);
             else if (data[i] >= 500 && data[i] < 1000)
@@ -89,7 +80,7 @@ int* BucketParallel(int* data,int n, int threadNum) {
 
     delete [] threads;
 
-    data = new int[n];
+    //data = new int[n];
     int tmp = 0;
 
     for(int i = 0; i < threadNum; i++){

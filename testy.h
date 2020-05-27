@@ -4,3 +4,4 @@ void testQuickLimit(int n);
 void testBubbleSingleThread(int n);
 void testBucketParallel(int n);
 void testBubbleParalle(int n);
+void testBucketSingle(int n);

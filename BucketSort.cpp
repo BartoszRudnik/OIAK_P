@@ -1,55 +1,51 @@
 #include <queue>
+#include <algorithm>
+
 using namespace std;
 
-int wstawianie(int* tab, int size) {
+int* BucketSingleThread(int* data, int n) {
 
-    for (int j = 1; j < size; j++) {
+    auto* bucket = new vector<int>[8];
 
-        int klucz = tab[j];
-        int i = j - 1;
-        while (i >= 0 && tab[i] > klucz) {
-
-            tab[i + 1] = tab[i];
-            i--;
-
-        }
-        tab[i + 1] = klucz;
-
+    for (int i = 0; i < n; i++) {
+        if (data[i] < 500)
+            bucket[0].push_back(data[i]);
+        else if (data[i] >= 500 && data[i] < 1000)
+            bucket[1].push_back(data[i]);
+        else if (data[i] >= 1000 && data[i] < 1500)
+            bucket[2].push_back(data[i]);
+        else if (data[i] >= 1500 && data[i] < 2000)
+            bucket[3].push_back(data[i]);
+        else if (data[i] >= 2000 && data[i] < 2500)
+            bucket[4].push_back(data[i]);
+        else if (data[i] >= 2500 && data[i] < 3000)
+            bucket[5].push_back(data[i]);
+        else if (data[i] >= 3000 && data[i] < 3500)
+            bucket[6].push_back(data[i]);
+        else if (data[i] >= 3500 && data[i] <= 4000)
+            bucket[7].push_back(data[i]);
     }
 
-    return *tab;
-
-}
-
-int kubelkowe(int* tab, int size) {
-
-    queue<int> kubelki[1000];
-    int pomoc = 0;
-
-    for (int i = 0; i < size; i++) {
-
-        int index = size * tab[i];
-        kubelki[index].push(tab[i]);
-
+    for(int i = 0; i < 8; i++){
+        sort(bucket[i].begin(),bucket[i].end());
     }
 
-    for (int i = 0; i < size - 1; i++) {
+    int tmp = 0;
+    //data = new int[n];
 
-        wstawianie(tab, size);
+    for(int i = 0; i < 8; i++){
 
-    }
+        for(int j = 0; j < bucket[i].size(); j++){
 
+            data[tmp] = bucket[i][j];
+            tmp ++;
 
-    for (int i = 0; i < size; i++) {
-
-        for (int j = 0; j < kubelki[i].size(); j++) {
-            tab[pomoc] = kubelki->front();
-            kubelki->pop();
-            pomoc ++;
         }
 
     }
 
-    return *tab;
+    delete [] bucket;
+
+    return data;
 
 }
