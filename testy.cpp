@@ -28,11 +28,27 @@ void saveFile(string nazwa, double result){
 
 }
 
-void testBucketParallel(int n){
+void testBucketParallel(int n) {
 
-    auto * result = new double[tests];
-
+    auto *result = new double[tests];
+    int tNum = 8;
     int pom = 0;
+
+    unsigned int supporteThreadsAmount = std::thread::hardware_concurrency();
+    std::cout << "Twój system obsługuje " << supporteThreadsAmount << " wątków.\n";
+
+    bool tNumOk = false;
+
+    while (!tNumOk) {
+        cout << "Podaj maksymalna liczbe watkow(2,4 lub 8): ";
+        cin >> tNum;
+
+        if(tNum == 2 || tNum == 4 || tNum == 8){
+            tNumOk = true;
+        }
+    }
+
+
 
     for(int t = 0; t < tests; t++) {
 
@@ -45,7 +61,7 @@ void testBucketParallel(int n){
         }
 
         auto start = high_resolution_clock::now();
-        tab = BucketParallel(tab,n,8);
+        tab = BucketParallel(tab,n,tNum);
         auto finish = high_resolution_clock::now();
 
         if(isSorted(tab, n))
@@ -67,7 +83,7 @@ void testBucketParallel(int n){
     double r = average(result);
     r *= 1000000;
 
-    saveFile("TESTBucketThread8.txt", r);
+    saveFile("TESTBucketThread" + to_string(tNum) + ".txt", r);
 
     delete [] result;
 
