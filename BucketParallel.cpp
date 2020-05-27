@@ -14,6 +14,7 @@ void sortBucket(vector<int>& vec){
 int* BucketParallel(int* data,int n, int threadNum){
 
     auto* bucket = new vector<int>[threadNum];
+    auto* threads = new vector<thread>[threadNum];
 
     for(int i = 0; i < n; i++){
 
@@ -36,23 +37,18 @@ int* BucketParallel(int* data,int n, int threadNum){
 
     }
 
-    thread t1(sortBucket,std::ref(bucket[0]));
-    thread t2(sortBucket,std::ref(bucket[1]));
-    thread t3(sortBucket,std::ref(bucket[2]));
-    thread t4(sortBucket,std::ref(bucket[3]));
-    thread t5(sortBucket,std::ref(bucket[4]));
-    thread t6(sortBucket,std::ref(bucket[5]));
-    thread t7(sortBucket,std::ref(bucket[6]));
-    thread t8(sortBucket,std::ref(bucket[7]));
+    for(int i = 0; i < threadNum; i++){
 
-    t1.join();
-    t2.join();
-    t3.join();
-    t4.join();
-    t5.join();
-    t6.join();
-    t7.join();
-    t8.join();
+        thread th(sortBucket, std::ref(bucket[i]));
+        threads->push_back(move(th));
+
+    }
+
+    for(int i = 0; i < threadNum; i++){
+        threads->at(i).join();
+    }
+
+    delete [] threads;
 
     data = new int[n];
     int tmp = 0;
@@ -67,6 +63,8 @@ int* BucketParallel(int* data,int n, int threadNum){
         }
 
     }
+
+    delete [] bucket;
 
     return data;
 
