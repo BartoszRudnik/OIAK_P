@@ -4,6 +4,9 @@
 CMakeFiles/OIAK_P.dir/BubbleSort.cpp.o: ../BubbleSort.cpp
 CMakeFiles/OIAK_P.dir/BubbleSort.cpp.o: ../BubbleSort.h
 
+CMakeFiles/OIAK_P.dir/BubbleSortParallel.cpp.o: ../BubbleSortParallel.cpp
+CMakeFiles/OIAK_P.dir/BubbleSortParallel.cpp.o: ../BubbleSortParallel.h
+
 CMakeFiles/OIAK_P.dir/BucketSort.cpp.o: ../BucketSort.cpp
 
 CMakeFiles/OIAK_P.dir/QuickSort.cpp.o: ../QuickSort.cpp
@@ -20,6 +23,7 @@ CMakeFiles/OIAK_P.dir/main.cpp.o: ../main.cpp
 CMakeFiles/OIAK_P.dir/main.cpp.o: ../testy.h
 
 CMakeFiles/OIAK_P.dir/testy.cpp.o: ../BubbleSort.h
+CMakeFiles/OIAK_P.dir/testy.cpp.o: ../BubbleSortParallel.h
 CMakeFiles/OIAK_P.dir/testy.cpp.o: ../QuickSort.h
 CMakeFiles/OIAK_P.dir/testy.cpp.o: ../QuickSortOptimal.h
 CMakeFiles/OIAK_P.dir/testy.cpp.o: ../QuickSortParrallel.h
