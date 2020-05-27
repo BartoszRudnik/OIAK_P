@@ -42,6 +42,7 @@ int main() {
                 testBubbleSingleThread(n);
                 break;
             case 5:
+                testBubbleParalle(n);
                 break;
             case 6:
                 cout << "Podaj nowa liczbe danych: ";

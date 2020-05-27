@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/bartosz/CLionProjects/OIAK_P/main.cpp
-iostream
+/home/kuba/CLionProjects/OIAK_P/BubbleSortParallel.cpp
+thread
 -
-testy.h
-/home/bartosz/CLionProjects/OIAK_P/testy.h
+BubbleSortParallel.h
+/home/kuba/CLionProjects/OIAK_P/BubbleSortParallel.h
 
-/home/bartosz/CLionProjects/OIAK_P/testy.h
+/home/kuba/CLionProjects/OIAK_P/BubbleSortParallel.h
 

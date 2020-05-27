@@ -7,6 +7,7 @@
 #include "QuickSortOptimal.h"
 #include "QuickSortParrallel.h"
 #include "BubbleSort.h"
+#include "BubbleSortParallel.h"
 
 using namespace std;
 using namespace std::chrono;
@@ -217,6 +218,60 @@ void testBubbleSingleThread(int n){
 
     delete [] result;
 
+
+}
+
+void testBubbleParalle(int n){
+
+    int tNum;
+    int pom = 0;
+
+    unsigned int supporteThreadsAmount = std::thread::hardware_concurrency();
+    std::cout << "Twój system obsługuje "<< supporteThreadsAmount << " wątków.\n";
+
+    cout << "Podaj maksymalna liczbe watkow: ";
+    cin >> tNum;
+
+    auto * result = new double[tests];
+
+    for(int t = 0; t < tests; t++) {
+
+        int *tab = new int[n];
+
+        srand(time(NULL));
+
+        for (int i = 0; i < n; i++) {
+            tab[i] = rand() % n + 1;
+        }
+
+        auto start = high_resolution_clock::now();
+        BubbleSortParallel(tab, n, tNum);
+        auto finish = high_resolution_clock::now();
+
+        setActualBubble();
+
+        if(isSorted(tab, n))
+            pom++;
+
+        duration<double> time = finish - start;
+
+        result[t] = time.count();
+
+        delete[] tab;
+
+    }
+
+    if(pom == tests)
+        cout << "Dane zostaly poprawnie posortowane" << endl << endl;
+    else
+        cout << "W sortowaniu wystapilo: " << tests - pom << " bledow" << endl << endl;
+
+    double r = average(result);
+    r *= 1000000;
+
+    saveFile("TESTBubbleThread" + to_string(tNum) + ".txt", r);
+
+    delete [] result;
 
 }
 

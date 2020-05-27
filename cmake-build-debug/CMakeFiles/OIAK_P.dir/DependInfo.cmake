@@ -4,13 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/bartosz/CLionProjects/OIAK_P/BubbleSort.cpp" "/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles/OIAK_P.dir/BubbleSort.cpp.o"
-  "/home/bartosz/CLionProjects/OIAK_P/BucketSort.cpp" "/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles/OIAK_P.dir/BucketSort.cpp.o"
-  "/home/bartosz/CLionProjects/OIAK_P/QuickSort.cpp" "/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles/OIAK_P.dir/QuickSort.cpp.o"
-  "/home/bartosz/CLionProjects/OIAK_P/QuickSortOptimal.cpp" "/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles/OIAK_P.dir/QuickSortOptimal.cpp.o"
-  "/home/bartosz/CLionProjects/OIAK_P/QuickSortParallel.cpp" "/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles/OIAK_P.dir/QuickSortParallel.cpp.o"
-  "/home/bartosz/CLionProjects/OIAK_P/main.cpp" "/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles/OIAK_P.dir/main.cpp.o"
-  "/home/bartosz/CLionProjects/OIAK_P/testy.cpp" "/home/bartosz/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles/OIAK_P.dir/testy.cpp.o"
+  "/home/kuba/CLionProjects/OIAK_P/BubbleSort.cpp" "/home/kuba/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles/OIAK_P.dir/BubbleSort.cpp.o"
+  "/home/kuba/CLionProjects/OIAK_P/BubbleSortParallel.cpp" "/home/kuba/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles/OIAK_P.dir/BubbleSortParallel.cpp.o"
+  "/home/kuba/CLionProjects/OIAK_P/BucketSort.cpp" "/home/kuba/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles/OIAK_P.dir/BucketSort.cpp.o"
+  "/home/kuba/CLionProjects/OIAK_P/QuickSort.cpp" "/home/kuba/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles/OIAK_P.dir/QuickSort.cpp.o"
+  "/home/kuba/CLionProjects/OIAK_P/QuickSortOptimal.cpp" "/home/kuba/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles/OIAK_P.dir/QuickSortOptimal.cpp.o"
+  "/home/kuba/CLionProjects/OIAK_P/QuickSortParallel.cpp" "/home/kuba/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles/OIAK_P.dir/QuickSortParallel.cpp.o"
+  "/home/kuba/CLionProjects/OIAK_P/main.cpp" "/home/kuba/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles/OIAK_P.dir/main.cpp.o"
+  "/home/kuba/CLionProjects/OIAK_P/testy.cpp" "/home/kuba/CLionProjects/OIAK_P/cmake-build-debug/CMakeFiles/OIAK_P.dir/testy.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

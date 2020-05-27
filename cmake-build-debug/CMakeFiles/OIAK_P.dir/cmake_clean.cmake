@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/OIAK_P.dir/BubbleSort.cpp.o"
+  "CMakeFiles/OIAK_P.dir/BubbleSortParallel.cpp.o"
   "CMakeFiles/OIAK_P.dir/BucketSort.cpp.o"
   "CMakeFiles/OIAK_P.dir/QuickSort.cpp.o"
   "CMakeFiles/OIAK_P.dir/QuickSortOptimal.cpp.o"
