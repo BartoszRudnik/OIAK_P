@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/bartosz/CLionProjects/OIAK_P/QuickSort.h
-
-/home/bartosz/CLionProjects/OIAK_P/QuickSortOptimal.cpp
-thread
+/home/bartosz/CLionProjects/OIAK_P/main.cpp
+iostream
 -
-QuickSort.h
-/home/bartosz/CLionProjects/OIAK_P/QuickSort.h
+testy.h
+/home/bartosz/CLionProjects/OIAK_P/testy.h
+
+/home/bartosz/CLionProjects/OIAK_P/testy.h
 
