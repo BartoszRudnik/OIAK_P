@@ -40,10 +40,10 @@ void testBucketParallel(int n) {
     bool tNumOk = false;
 
     while (!tNumOk) {
-        cout << "Podaj maksymalna liczbe watkow(2,4 lub 8): ";
+        cout << "Podaj maksymalna liczbe watkow(2, 4, 6 lub 8): ";
         cin >> tNum;
 
-        if(tNum == 2 || tNum == 4 || tNum == 8){
+        if(tNum == 2 || tNum == 4 || tNum == 6 || tNum == 8){
             tNumOk = true;
         }
     }

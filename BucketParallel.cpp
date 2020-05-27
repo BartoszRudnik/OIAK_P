@@ -10,13 +10,13 @@ void sortBucket(vector<int>& vec){
 
 }
 
-int* BucketParallel(int* data,int n, int threadNum){
+int* BucketParallel(int* data,int n, int threadNum) {
 
-    auto* bucket = new vector<int>[threadNum];
-    auto* threads = new vector<thread>[threadNum];
+    auto *bucket = new vector<int>[threadNum];
+    auto *threads = new vector<thread>[threadNum];
 
     //int bucketSize = 4000/threadNum;
-    if(threadNum == 8) {
+    if (threadNum == 8) {
         for (int i = 0; i < n; i++) {
 // BARDZO CZASOCHŁONNE!
 //        for(int j = 0; j < threadNum; j++){
@@ -43,7 +43,22 @@ int* BucketParallel(int* data,int n, int threadNum){
             else if (data[i] >= 3500 && data[i] <= 4000)
                 bucket[7].push_back(data[i]);
         }
-    } else if(threadNum == 4){
+    } else if(threadNum == 6){
+        for (int i = 0; i < n; i++) {
+            if (data[i] < 700)
+                bucket[0].push_back(data[i]);
+            else if (data[i] >= 700 && data[i] < 1400)
+                bucket[1].push_back(data[i]);
+            else if (data[i] >= 1400 && data[i] < 2100)
+                bucket[2].push_back(data[i]);
+            else if (data[i] >= 2100 && data[i] < 2800)
+                bucket[3].push_back(data[i]);
+            else if (data[i] >= 2800 && data[i] < 4500)
+                bucket[4].push_back(data[i]);
+            else if (data[i] >= 3450 && data[i] <= 4000)
+                bucket[5].push_back(data[i]);
+        }
+    }else if(threadNum == 4){
         for (int i = 0; i < n; i++) {
             if (data[i] < 1000)
                 bucket[0].push_back(data[i]);
